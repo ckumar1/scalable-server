@@ -5,4 +5,31 @@ To simplify this project, we are providing you with the code for a very basic we
 This basic web server operates with only a single thread; it will be your job to make the web server multi-threaded so that it is more efficient.
 
 First, you make the web server multi-threaded.
-Second, you will implement different scheduling policies so that requests are serviced in different orders. 
+Second, you will implement different scheduling policies so that requests are serviced in different orders.
+
+Note from teacher:
+A few points about running the web server program.
+
+You may not be able to access the server from a web browser unless the server and the browser are both running on the same machine.
+I believe the CS department will block most accesses to our machines sent by requests from outside the CS department's own network.
+
+You can also use the client.c program to test your server.  It has the following format
+
+client <host> <port> <filename>
+
+e.g.
+
+client mumble-01.cs.wisc.edu 4678 /home.html
+
+The server automatically puts a . on the front of your filename, so you need the / for it to find the file you want.
+If things are working you should see the client print the text of the HTML file you request.
+
+You can be courteous to other users by always terminating your servers after you're done using them.  Don't leave large numbers of unattended servers running.
+Check out "man killall".
+
+Try to choose unique and personal port numbers so you're less likely to have conflicts with other users testing on the same machine.
+
+I have been able to successfully build the server and test it with the client program on a mumble machine, so let me know if you're having difficulties.
+
+
+-- Daniel
