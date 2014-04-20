@@ -1,0 +1,8 @@
+Scalable Web Server
+
+In this assignment, you will be developing a real, working web server.
+To simplify this project, we are providing you with the code for a very basic web server.
+This basic web server operates with only a single thread; it will be your job to make the web server multi-threaded so that it is more efficient.
+
+First, you make the web server multi-threaded.
+Second, you will implement different scheduling policies so that requests are serviced in different orders. 
